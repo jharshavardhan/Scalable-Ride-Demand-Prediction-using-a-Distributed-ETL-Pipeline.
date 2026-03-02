@@ -7,7 +7,7 @@ This project builds a scalable ETL pipeline for processing NYC taxi ride data an
 The objective is to transform raw ride data into structured, analytics-ready datasets and develop machine learning models for demand forecasting.
 
 This project follows the CRISP-DM methodology and aligns with distributed data engineering principles.
-
+<hr>
 🏗️ Project Architecture
 
 Raw Data (Parquet)
