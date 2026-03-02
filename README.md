@@ -119,7 +119,7 @@ more effectively than Linear Regression.
 <hr>
 
 <h2>📂 Repository Structure</h2>
-
+<pre><code>
 Midterm-Project/
 │
 ├── notebooks/
@@ -133,6 +133,7 @@ Midterm-Project/
 │
 ├── nyc_rides.db
 ├── README.md
+</code>
 </pre>
 
 <hr>
