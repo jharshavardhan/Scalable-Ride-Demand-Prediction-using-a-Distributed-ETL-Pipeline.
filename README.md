@@ -1,84 +1,142 @@
-# Scalable-Ride-Demand-Prediction-using-a-Distributed-ETL-Pipeline.
+<h2>📌 Project Overview</h2>
+<p>
+This project builds a <b>scalable ETL pipeline</b> to process NYC taxi ride data 
+and predict hourly ride demand.
+</p>
 
-### 📌 Project Overview
+<p>
+The objective is to transform raw ride data into structured, analytics-ready datasets 
+and develop machine learning models for demand forecasting.
+</p>
 
-This project builds a scalable ETL pipeline for processing NYC taxi ride data and predicting hourly ride demand.
+<p>
+The project follows the <b>CRISP-DM methodology</b> and distributed data engineering principles.
+</p>
 
-The objective is to transform raw ride data into structured, analytics-ready datasets and develop machine learning models for demand forecasting.
+<hr>
 
-This project follows the CRISP-DM methodology and aligns with distributed data engineering principles.
----
+<h2>🏗️ Project Architecture</h2>
 
-### 🏗️ Project Architecture
+<p>
+Raw Parquet Data <br>
+→ Data Cleaning <br>
+→ Feature Engineering <br>
+→ Hourly Aggregation <br>
+→ Structured Storage <br>
+→ Machine Learning Models <br>
+→ Evaluation
+</p>
 
-Raw Data (Parquet)
-→ Data Cleaning & Transformation
-→ Feature Engineering
-→ Aggregation (Hourly Ride Count)
-→ Structured Storage
-→ Machine Learning Models
----
-### 📊 Dataset
+<hr>
 
-NYC Taxi Ride Dataset (Parquet format)
+<h2>📊 Dataset</h2>
 
-Features include:
+<ul>
+  <li>NYC Taxi Ride Dataset (Parquet format)</li>
+  <li>Pickup & Dropoff timestamps</li>
+  <li>Trip distance</li>
+  <li>Passenger count</li>
+  <li>Fare amount</li>
+  <li>Location IDs</li>
+</ul>
 
-Pickup & dropoff timestamps
+<hr>
 
-Trip distance
+<h2>⚙️ ETL Pipeline</h2>
 
-Passenger count
+<h3>🔹 Data Ingestion</h3>
+<ul>
+  <li>Loaded raw Parquet ride data</li>
+</ul>
 
-Fare amount
+<h3>🔹 Data Cleaning</h3>
+<ul>
+  <li>Removed missing & invalid records</li>
+  <li>Filtered unrealistic trip values</li>
+  <li>Ensured timestamp consistency</li>
+</ul>
 
-Location IDs
----
-###⚙️ ETL Pipeline
+<h3>🔹 Feature Engineering</h3>
+<ul>
+  <li>Extracted hour of day</li>
+  <li>Extracted day of week</li>
+  <li>Created weekend indicator</li>
+</ul>
 
-The ETL process includes:
+<h3>🔹 Aggregation</h3>
+<ul>
+  <li>Calculated hourly ride counts</li>
+</ul>
 
-Data ingestion from raw Parquet files
+<hr>
 
-Cleaning missing & invalid values
+<h2>🗄️ Data Storage</h2>
 
-Feature extraction (hour, day of week, weekend)
+<p>
+Processed data was stored in a structured format to ensure:
+</p>
 
-Aggregation of hourly ride counts
+<ul>
+  <li>Efficient querying</li>
+  <li>Reproducibility</li>
+  <li>Scalability for future distributed processing</li>
+</ul>
 
-Structured data storage for modeling
----
-### 🤖 Modeling
+<hr>
 
-We implemented:
+<h2>🤖 Modeling & Evaluation</h2>
 
-Linear Regression
+<ul>
+  <li>Linear Regression</li>
+  <li><b>Random Forest Regressor (Best Model)</b></li>
+</ul>
 
-Random Forest Regressor
+<p>
+Random Forest achieved the lowest RMSE and captured nonlinear demand patterns 
+more effectively than Linear Regression.
+</p>
 
-📈 Best RMSE: ~"    "rides (Random Forest)
+<p><b>Key Insights:</b></p>
+<ul>
+  <li>Peak demand during rush hours</li>
+  <li>Weekend behavior differs from weekdays</li>
+  <li>Tree-based models outperform linear models</li>
+</ul>
 
-Tree-based models captured nonlinear demand patterns more effectively.
----
-### 🚀 Future Improvements
+<hr>
 
-Integrate Apache Spark for distributed scalability
+<h2>🚀 Future Improvements</h2>
 
-Add weather & holiday features
+<ul>
+  <li>Integrate Apache Spark for distributed processing</li>
+  <li>Add weather & holiday features</li>
+  <li>Deploy model via API for real-time predictions</li>
+  <li>Develop visualization dashboard</li>
+</ul>
 
-Deploy prediction model via API
+<hr>
 
-Build visualization dashboard
----
-### 📂 Repository Structure
-├── 01_Data_Cleaning.ipynb
-├── 02_ETL_and_Data_Storage.ipynb
-├── 03_Modeling_and_Evaluation.ipynb
-├── data/
-└── README.md
----
-### 👥 Team
+<h2>📂 Repository Structure</h2>
 
-Harshavardhan J – ETL Pipeline & Modeling
+<pre>
+01_Data_Cleaning.ipynb
+02_ETL_and_Data_Storage.ipynb
+03_Modeling_and_Evaluation.ipynb
+data/
+README.md
+</pre>
 
-Cuthbeth – Data Storage, CRISP-DM & Documentation
+<hr>
+
+<h2>👥 Team</h2>
+
+<p>
+<b>Harshavardhan J</b> – ETL Pipeline & Modeling <br>
+<b>Cuthbeth</b> – Data Storage, CRISP-DM & Documentation
+</p>
+
+<hr>
+
+<p align="center">
+⭐ Distributed & Scalable Data Engineering – Midterm Project ⭐
+</p>
