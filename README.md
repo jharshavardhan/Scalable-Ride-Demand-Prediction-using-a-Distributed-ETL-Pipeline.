@@ -120,12 +120,19 @@ more effectively than Linear Regression.
 
 <h2>📂 Repository Structure</h2>
 
-<pre>
-01_Data_Cleaning.ipynb
-02_ETL_and_Data_Storage.ipynb
-03_Modeling_and_Evaluation.ipynb
-data/
-README.md
+Midterm-Project/
+│
+├── notebooks/
+│   ├── 01_Data_Cleaning_and_Preprocessing.ipynb
+│   ├── 02_ETL_and_Data_Storage.ipynb
+│   ├── 03_Modeling_and_Evaluation.ipynb
+│
+├── data/
+│   ├── raw.parquet
+│   ├── cleaned.parquet
+│
+├── nyc_rides.db
+├── README.md
 </pre>
 
 <hr>
