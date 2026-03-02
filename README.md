@@ -122,16 +122,18 @@ more effectively than Linear Regression.
 <pre><code>
 Midterm-Project/
 │
-├── notebooks/
+├── src/
 │   ├── 01_Data_Cleaning_and_Preprocessing.ipynb
 │   ├── 02_ETL_and_Data_Storage.ipynb
 │   ├── 03_Modeling_and_Evaluation.ipynb
-│
+│   ├── nyc_rides.db
+| 
 ├── data/
 │   ├── raw.parquet
 │   ├── cleaned.parquet
 │
-├── nyc_rides.db
+├── architecture/
+├── pic/
 ├── README.md
 </code>
 </pre>
